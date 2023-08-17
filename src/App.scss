@@ -1,0 +1,59 @@
+.to-do-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .container {
+    background-color: lightgray;
+    width: 90%;
+    border-radius: 2px;
+    padding: 10px 20px;
+    .main-container {
+      background-color: white;
+      .inner-container {
+        padding: 10px 20px;
+        .add-to-do-container {
+          display: flex;
+          padding-bottom: 10px;
+        }
+        .to-do-list-item {
+          display: flex;
+        }
+        .add-to-do {
+          //
+        }
+        .remove-to-do {
+          margin-left: 10px;
+        }
+      }
+      .heading {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+    }
+  }
+  .to-do-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(168, 240, 168);
+    padding: 10px;
+    .search-to-do {
+      display: flex;
+      align-items: center;
+    }
+    .search-icon {
+      padding-right: 10px;
+    }
+    .middle-line {
+      border-left: 2px solid rgba(37, 38, 37, 0.838);
+      padding: 0 10px;
+    }
+    .filter-to-do {
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+    }
+  }
+}

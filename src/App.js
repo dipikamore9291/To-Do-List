@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "@blueprintjs/core/lib/css/blueprint.css";
+import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+import "./App.scss";
 
+import ToDoList from "./containers/ToDoList";
+import AddToDo from "./containers/AddToDo";
+import ToDoActions from "./containers/ToDoActions";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="to-do-app">
+      <div className="container">
+        <div className="main-container">
+          <h1 className="heading">THINGS TO DO</h1>
+          <div className="inner-container">
+            <AddToDo />
+            <ToDoList />
+          </div>
+        </div>
+        <ToDoActions />
+      </div>
     </div>
   );
 }
